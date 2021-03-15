@@ -4,11 +4,11 @@ services:
   dnsanon:
     build: .
     container_name: dnsanon
-    image: dnsanon
+    image: fedora/dnsanon:latest
     tty: true
     volumes:
-      - /home/wiperpr/projects/PPSASOP_WP3/nfdump-docker/raw:/mnt/raw
-      - /home/wiperpr/projects/PPSASOP_WP3/iscxvpn2016/dns_complete:/mnt/export
+      - ./raw:/mnt/raw
+      - ./dns:/mnt/export
 
 volumes:
    raw:
