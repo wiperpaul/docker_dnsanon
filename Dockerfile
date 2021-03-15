@@ -14,6 +14,7 @@ libpcap-devel \
 make automake gcc gcc-c++ kernel-devel \
 libtrace-devel \ 
 openssl-devel \
+perl-Fsdb \
 && dnf clean all
 
 WORKDIR /tmp

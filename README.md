@@ -6,3 +6,9 @@ Docker Container for dnsanon
 
 Full Documentation can be found below
 https://ant.isi.edu/software/dnsanon/index.html
+
+Container also contains `perl-Fsdb` which allows for the conversion of fsdb files to csv in this manner:
+
+```
+cat $fsdb | db_to_csv > $fsdb".csv"
+```

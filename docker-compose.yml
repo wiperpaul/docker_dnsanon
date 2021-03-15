@@ -1,15 +1,14 @@
 version: "3"
 
 services:
-  nfdump:
+  dnsanon:
     build: .
-    container_name: nfdump
-    image: ubuntu:14.04
+    container_name: dnsanon
+    image: dnsanon
     tty: true
-
     volumes:
-      - ./raw:/mnt/raw
-      - ./export:/mnt/export
+      - /home/wiperpr/projects/PPSASOP_WP3/nfdump-docker/raw:/mnt/raw
+      - /home/wiperpr/projects/PPSASOP_WP3/iscxvpn2016/dns_complete:/mnt/export
 
 volumes:
    raw:
